@@ -1,77 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Minha Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NlsCoberturas</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      line-height: 1.6;
-      color: #333;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
 
     header {
       background: #111;
       color: white;
       padding: 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-    }
-
-    .hero {
-      height: 100vh;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-align: center;
-      color: white;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #111;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-
-    section {
-      padding: 80px 20px;
+      font-size: 26px;
+      font-weight: bold;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
+      padding: 20px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
     }
 
     .grid {
@@ -81,8 +47,8 @@
     }
 
     .card {
-      background: #f4f4f4;
-      padding: 20px;
+      background: white;
+      padding: 10px;
       border-radius: 10px;
       text-align: center;
     }
@@ -93,14 +59,11 @@
     }
 
     footer {
-      background: #111;
-      color: white;
       text-align: center;
       padding: 20px;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      background: #111;
+      color: white;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -108,83 +71,27 @@
 <body>
 
 <header>
-  <nav>
-    <div><strong>Meu Site</strong></div>
-    <div>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </nav>
+  NlsCoberturas
 </header>
 
-<section class="hero">
-  <div>
-    <h1>Bem-vindo à minha Landing Page</h1>
-    <p>Um site simples, moderno e responsivo</p>
-    <button class="btn" onclick="document.querySelector('#contato').scrollIntoView({behavior:'smooth'})">
-      Fale comigo
-    </button>
-  </div>
-</section>
+<div class="container">
 
-<section id="sobre">
-  <div class="container">
-    <h2>Sobre</h2>
-    <p>
-      Esta é uma landing page criada do zero com HTML, CSS e JavaScript puro.
-      Ela pode ser usada para projetos, portfólio ou testes no GitHub Pages.
-    </p>
-  </div>
-</section>
+  <a class="whatsapp" href="https://wa.me/5511948075205" target="_blank">
+    Fale conosco no WhatsApp
+  </a>
 
-<section id="servicos">
-  <div class="container">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Criação de Sites</h3>
-        <p>Sites modernos e responsivos.</p>
-      </div>
-      <div class="card">
-        <h3>Design</h3>
-        <p>Layouts simples e profissionais.</p>
-      </div>
-      <div class="card">
-        <h3>Hospedagem</h3>
-        <p>Publicação no GitHub Pages.</p>
-      </div>
+  <h2>Trabalhos realizados</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="IMG-2026702-WA0031~3" alt="trabalho 1">
     </div>
   </div>
-</section>
 
-<section id="galeria">
-  <div class="container">
-    <h2>Galeria</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://picsum.photos/400/300?random=1" alt="imagem1">
-      </div>
-      <div class="card">
-        <img src="https://picsum.photos/400/300?random=2" alt="imagem2">
-      </div>
-      <div class="card">
-        <img src="https://picsum.photos/400/300?random=3" alt="imagem3">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contato">
-  <div class="container">
-    <h2>Contato</h2>
-    <p>Email: exemplo@email.com</p>
-  </div>
-</section>
+</div>
 
 <footer>
-  <p>© 2026 - Minha Landing Page</p>
+  © NlsCoberturas
 </footer>
 
 </body>
