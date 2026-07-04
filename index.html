@@ -6,49 +6,107 @@
   <title>NlsCoberturas</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
     }
 
+    body {
+      scroll-behavior: smooth;
+      background: #f5f5f5;
+    }
+
+    /* MENU */
     header {
-      background: #222;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
       color: white;
-      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #f5c400;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #111, #333);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-    }
-
-    section {
-      background: white;
-      margin: 20px;
       padding: 20px;
-      border-radius: 10px;
     }
 
-    .whatsapp {
-      display: inline-block;
+    .hero h2 {
+      font-size: 40px;
+      color: #f5c400;
+    }
+
+    .btn {
+      margin-top: 20px;
       background: #25D366;
+      padding: 12px 20px;
       color: white;
-      padding: 10px 15px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 10px;
+    /* SEÇÕES */
+    section {
+      padding: 80px 20px;
+      text-align: center;
     }
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: white;
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
+
+    .galeria div {
+      background: #ddd;
+      height: 180px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* espaço por causa do menu fixo */
+    .spacer {
+      height: 70px;
+    }
+
   </style>
 </head>
 
@@ -56,34 +114,53 @@
 
   <header>
     <h1>NlsCoberturas</h1>
-    <p>Especialistas em coberturas</p>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Contato WhatsApp</h2>
-    <p>Clique no botão abaixo para falar conosco:</p>
+  <div class="spacer"></div>
 
-    <a class="whatsapp"
-       href="https://wa.me/11948075205
-       target="_blank">
-       Falar no WhatsApp
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <h2>Coberturas Modernas</h2>
+    <p>Qualidade e segurança para seu projeto</p>
+
+    <a class="btn" href="https://wa.me/5511948075205" target="_blank">
+      Fale no WhatsApp
     </a>
+  </section>
 
-    <p style="margin-top:10px;">
-      ⚠️ Troque o número acima pelo seu WhatsApp real.
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      A NlsCoberturas é especializada em estruturas metálicas e coberturas modernas
+      para residências e empresas.
     </p>
   </section>
 
-  <section>
-    <h2>Galeria de Coberturas</h2>
+  <!-- GALERIA -->
+  <section id="galeria">
+    <h2>Nossos Trabalhos</h2>
 
     <div class="galeria">
-      <p>Adicione suas imagens na pasta <strong>imagens/</strong> e use assim:</p>
-
-      <p><code>imagens/foto1.jpg</code></p>
-      <p><code>imagens/foto2.jpg</code></p>
-      <p><code>imagens/foto3.jpg</code></p>
+      <div>Foto 1</div>
+      <div>Foto 2</div>
+      <div>Foto 3</div>
+      <div>Foto 4</div>
+      <div>Foto 5</div>
+      <div>Foto 6</div>
     </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>WhatsApp: 11 94807-5205</p>
   </section>
 
   <footer>
